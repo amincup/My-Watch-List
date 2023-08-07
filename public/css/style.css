@@ -1,0 +1,12 @@
+.sampul {
+    width: 150px;
+}
+
+.table > tbody > tr > * {
+    vertical-align: middle;
+}
+
+.thead-dark > thead > tr > th {
+    vertical-align: middle;
+    justify-content: center;
+}

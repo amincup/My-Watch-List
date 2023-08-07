@@ -1,0 +1,94 @@
+CRITICAL - 2023-08-05 12:09:21 --> Invalid file: "layout/home.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layout/home.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('layout/home', [], true)
+ 3 APPPATH\Controllers\Home.php(12): view('layout/home', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Acer\\Documents\\perkUIiahan\\Archives\\CodeIgniter4\\codeigniter4-projectWeb\\public\\index.php')
+CRITICAL - 2023-08-05 12:11:47 --> Invalid file: "anime.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('anime.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('anime', [], true)
+ 3 APPPATH\Controllers\Home.php(12): view('anime', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Acer\\Documents\\perkUIiahan\\Archives\\CodeIgniter4\\codeigniter4-projectWeb\\public\\index.php')
+CRITICAL - 2023-08-05 12:11:49 --> Invalid file: "anime.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('anime.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('anime', [], true)
+ 3 APPPATH\Controllers\Home.php(12): view('anime', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Acer\\Documents\\perkUIiahan\\Archives\\CodeIgniter4\\codeigniter4-projectWeb\\public\\index.php')
+CRITICAL - 2023-08-05 12:11:50 --> Invalid file: "anime.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('anime.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('anime', [], true)
+ 3 APPPATH\Controllers\Home.php(12): view('anime', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Acer\\Documents\\perkUIiahan\\Archives\\CodeIgniter4\\codeigniter4-projectWeb\\public\\index.php')
+CRITICAL - 2023-08-05 12:11:50 --> Invalid file: "anime.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('anime.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('anime', [], true)
+ 3 APPPATH\Controllers\Home.php(12): view('anime', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Acer\\Documents\\perkUIiahan\\Archives\\CodeIgniter4\\codeigniter4-projectWeb\\public\\index.php')
+CRITICAL - 2023-08-05 12:11:50 --> Invalid file: "anime.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('anime.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('anime', [], true)
+ 3 APPPATH\Controllers\Home.php(12): view('anime', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Acer\\Documents\\perkUIiahan\\Archives\\CodeIgniter4\\codeigniter4-projectWeb\\public\\index.php')
+CRITICAL - 2023-08-05 12:11:50 --> Invalid file: "anime.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('anime.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('anime', [], true)
+ 3 APPPATH\Controllers\Home.php(12): view('anime', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Acer\\Documents\\perkUIiahan\\Archives\\CodeIgniter4\\codeigniter4-projectWeb\\public\\index.php')
+CRITICAL - 2023-08-05 12:53:17 --> Undefined property: CodeIgniter\View\View::$endSection
+in APPPATH\Views\pages\home.php on line 14.
+ 1 APPPATH\Views\pages\home.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\View\\View::$endSection', 'C:\\Users\\Acer\\Documents\\perkUIiahan\\Archives\\CodeIgniter4\\codeigniter4-projectWeb\\app\\Views\\pages\\home.php', 14)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\Acer\\Documents\\perkUIiahan\\Archives\\CodeIgniter4\\codeigniter4-projectWeb\\app\\Views\\pages\\home.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('pages/home', [], true)
+ 5 APPPATH\Controllers\Anime.php(13): view('pages/home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Anime->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anime))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Acer\\Documents\\perkUIiahan\\Archives\\CodeIgniter4\\codeigniter4-projectWeb\\public\\index.php')
+CRITICAL - 2023-08-05 12:58:13 --> Undefined property: CodeIgniter\View\View::$endSection
+in APPPATH\Views\pages\home.php on line 14.
+ 1 APPPATH\Views\pages\home.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\View\\View::$endSection', 'C:\\Users\\Acer\\Documents\\perkUIiahan\\Archives\\CodeIgniter4\\codeigniter4-projectWeb\\app\\Views\\pages\\home.php', 14)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\Acer\\Documents\\perkUIiahan\\Archives\\CodeIgniter4\\codeigniter4-projectWeb\\app\\Views\\pages\\home.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('pages/home', [], true)
+ 5 APPPATH\Controllers\Anime.php(13): view('pages/home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Anime->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anime))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Acer\\Documents\\perkUIiahan\\Archives\\CodeIgniter4\\codeigniter4-projectWeb\\public\\index.php')
