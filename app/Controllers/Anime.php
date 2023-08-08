@@ -63,7 +63,8 @@ class Anime extends BaseController
     public function create()
     {
         $data = [
-            'title' => 'Add watch list'
+            'title' => 'Add watch list',
+            'validation' => \Config\Services::validation()
         ];
 
         return view('anime/create', $data);
@@ -71,6 +72,20 @@ class Anime extends BaseController
 
     public function save()
     {
+        //validasi input
+        if (!$this->validate([
+            'judul' => [
+                'rules' => 'required|is_unique[watch.judul]',
+                'errors' => [
+                    'required' => '{field} Judul harus di isi',
+                    'is_unique' => '{field} Judul sudah terdaftar'
+                ]
+            ]
+        ])) {
+            $validation = \Config\Services::validation();
+            return redirect()->to('/anime/create')->withInput()->with('validation', $validation);
+        }
+
         $slug = url_title($this->request->getVar('judul'), '-', true);
         $this->animeModel->save([
             'judul' => $this->request->getVar('judul'),
