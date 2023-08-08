@@ -80,11 +80,39 @@ class Anime extends BaseController
                     'required' => '{field} Judul harus di isi',
                     'is_unique' => '{field} Judul sudah terdaftar'
                 ]
+            ],
+            'sampul' => [
+                'rules' => 'max_size[sampul,1024]|is_image[sampul]|mime_in[sampul,image/jpg,image/jpeg,image/png]',
+                'errors' => [
+                    'max_size' => 'File size max is 5 MB',
+                    'is_image' => 'File you choose is not image',
+                    'mime_in' => 'File you choose is not image'
+                ]
             ]
         ])) {
-            $validation = \Config\Services::validation();
-            return redirect()->to('/anime/create')->withInput()->with('validation', $validation);
+            // $validation = \Config\Services::validation();
+            //return redirect()->to('/anime/create')->withInput()->with('validation', $validation);
+            return redirect()->to('/anime/create')->withInput();
         }
+
+        //ambil gambar
+        $fileSampul = $this->request->getFile('sampul');
+
+        //apakah tidak ada ambar yang di upload
+        if ($fileSampul->getError() == 4) {
+            $namaSampul = 'default.jpg';
+        } else {
+            //generate nama sampul random
+            // $namaSampul = $fileSampul->getRandomName();
+
+            //pindahkan file
+            $fileSampul->move('img');
+
+            //ambil nama file
+            $namaSampul = $fileSampul->getName();
+        }
+
+
 
         $slug = url_title($this->request->getVar('judul'), '-', true);
         $this->animeModel->save([
@@ -92,7 +120,7 @@ class Anime extends BaseController
             'slug' => $slug,
             'genre' => $this->request->getVar('genre'),
             'studio' => $this->request->getVar('studio'),
-            'sampul' => $this->request->getVar('sampul')
+            'sampul' => $namaSampul
         ]);
 
         session()->setFlashdata('pesan', 'Data successfully added');
@@ -102,6 +130,16 @@ class Anime extends BaseController
 
     public function delete($id)
     {
+        //cari gambar dari id
+        $anime = $this->animeModel->find($id);
+
+        //cek jika default
+        if ($anime['sampul'] != 'default.jpg') {
+            //hapus gambar
+            unlink('img/' . $anime['sampul']);
+        }
+
+
         $this->animeModel->delete($id);
         session()->setFlashdata('pesan', 'Data successfully deleted');
         return redirect()->to('/anime/list_anime');
@@ -136,10 +174,28 @@ class Anime extends BaseController
                     'required' => '{field} Judul harus di isi',
                     'is_unique' => '{field} Judul sudah terdaftar'
                 ]
+            ],
+            'sampul' => [
+                'rules' => 'max_size[sampul,1024]|is_image[sampul]|mime_in[sampul,image/jpg,image/jpeg,image/png]',
+                'errors' => [
+                    'max_size' => 'File size max is 5 MB',
+                    'is_image' => 'File you choose is not image',
+                    'mime_in' => 'File you choose is not image'
+                ]
             ]
         ])) {
-            $validation = \Config\Services::validation();
-            return redirect()->to('/anime/edit/' . $this->request->getVar('slug'))->withInput()->with('validation', $validation);
+            return redirect()->to('/anime/edit/' . $this->request->getVar('slug'))->withInput();
+        }
+
+        $fileSampul = $this->request->getFile('sampul');
+
+        //cek gambar
+        if ($fileSampul->getError() == 4) {
+            $namaSampul = $this->request->getVar('sampulLama');
+        } else {
+            $namaSampul = $fileSampul->getRandomName();
+            $fileSampul->move('img', $namaSampul);
+            unlink('img/' . $this->request->getVar("sampulLama"));
         }
 
         $slug = url_title($this->request->getVar('judul'), '-', true);
@@ -149,7 +205,7 @@ class Anime extends BaseController
             'slug' => $slug,
             'genre' => $this->request->getVar('genre'),
             'studio' => $this->request->getVar('studio'),
-            'sampul' => $this->request->getVar('sampul')
+            'sampul' => $namaSampul
         ]);
 
         session()->setFlashdata('pesan', 'Data successfully edited');
