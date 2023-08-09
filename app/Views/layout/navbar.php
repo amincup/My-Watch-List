@@ -6,7 +6,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-                <a class="nav-link active" href="<?= base_url('/'); ?>">Home</a>
+                <a class="nav-link" href="<?= base_url('/'); ?>">Home</a>
                 <a class="nav-link" href="/anime/list_anime">List Anime</a>
                 <a class="nav-link" href="<?= base_url('anime/about'); ?>">About</a>
             </div>

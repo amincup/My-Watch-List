@@ -1,12 +1,419 @@
-.sampul {
-    width: 150px;
+/* home */
+
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.table > tbody > tr > * {
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+}
+
+/* Header styles */
+header {
+    background-color: #343a40; /* Dark gray background */
+    color: #ffffff; /* White text color */
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* Navigation styles */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    background-color: #f8f9fa; /* Light gray background */
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #343a40; /* Dark gray text color */
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a.active,
+nav a:hover {
+    color: #007bff; /* Blue color for active/hover state */
+}
+
+/* Main content styles */
+.main {
+    padding: 20px;
+}
+
+/* Hero section styles */
+.hero {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #777;
+}
+
+/* Recently Watched section styles */
+.recent-watches {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.recent-watches h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.watch-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.watch-item {
+    margin: 10px;
+    text-align: center;
+}
+
+.watch-item img {
+    max-width: 150px;
+    height: auto;
+}
+
+.watch-item h3 {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #343a40; /* Dark gray background */
+    color: #ffffff; /* White text color */
+}
+
+
+/* akhir home */
+
+/* Styling for the container */
+.container {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Styling for the headings */
+  h1 {
+    font-size: 32px;
+    margin-top: 0;
+  }
+  
+  /* Styling for the success alert */
+  .alert-success {
+    margin-top: 10px;
+  }
+  
+  /* Styling for the "Add your watch list" button */
+  .btn-primary {
+    background-color: #007bff;
+    border: none;
+  }
+  
+  /* Styling for the table */
+  .table {
+    margin-top: 20px;
+    vertical-align: middle;
+  }
+  
+  /* Styling for table headers */
+  thead th {
+    background-color: #343a40;
+    color: #ffffff;
+    vertical-align: middle;
+  }
+  
+  /* Styling for table rows */
+  tbody td {
+    vertical-align: middle;
+  }
+
+  .table > tbody > tr > * {
     vertical-align: middle;
 }
 
-.thead-dark > thead > tr > th {
+   .thead-dark > thead > tr > th {
     vertical-align: middle;
     justify-content: center;
 }
+  
+  /* Styling for the cover images */
+  .sampul {
+    max-width: 80px;
+    max-height: 120px;
+  }
+  
+  /* Styling for the "Detail" buttons */
+  .btn-success {
+    background-color: #28a745;
+    border: none;
+  }
+  
+  /* Add margin to the "Detail" buttons */
+  .btn-success {
+    margin-top: 5px;
+  }
+  
+  /* Styling for the navbar */
+.navbar {
+    background-color: #f8f9fa; /* Light gray background */
+    padding: 10px 0; /* Add some padding */
+    border-bottom: 1px solid #e9ecef; /* Add a subtle border at the bottom */
+  }
+  
+  /* Styling for the navbar-brand */
+  .navbar-brand {
+    font-weight: bold;
+    color: #343a40; /* Dark gray text color */
+  }
+  
+  /* Styling for the navbar-toggler-icon */
+  .navbar-toggler-icon {
+    background-color: #343a40; /* Dark gray background for the toggler icon */
+  }
+  
+  /* Styling for the navbar links */
+  .navbar-nav .nav-link {
+    color: #343a40; /* Dark gray text color for links */
+    margin-right: 15px; /* Add some space between links */
+  }
+  
+  /* Styling for the active link */
+  .navbar-nav .nav-link.active {
+    font-weight: bold;
+  }
+  
+  /* Remove the underline from navbar links */
+  .navbar-nav .nav-link:hover {
+    text-decoration: solid;
+  }
+  
+  /* Add some space at the top of the page */
+  body {
+    padding-top: 20px;
+  }
+  
+  /* awal about */
+
+  /* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+}
+
+/* Header styles */
+header {
+    background-color: #343a40; /* Dark gray background */
+    color: #ffffff; /* White text color */
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* Navigation styles */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    background-color: #f8f9fa; /* Light gray background */
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #343a40; /* Dark gray text color */
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a.active,
+nav a:hover {
+    color: #007bff; /* Blue color for active/hover state */
+}
+
+/* Main content styles */
+.main {
+    padding: 20px;
+}
+
+/* About section styles */
+.about {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.about h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.about p {
+    font-size: 18px;
+    color: #777;
+}
+
+/* Team section styles */
+.team {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.team h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.member {
+    margin: 20px;
+}
+
+.member img {
+    max-width: 150px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.member h3 {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.member p {
+    color: #777;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #343a40; /* Dark gray background */
+    color: #ffffff; /* White text color */
+    border-radius: 10px;
+}
+
+  /* akhir about */
+
+/* awal detail */
+
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+}
+
+/* Container styles */
+.container {
+    padding: 20px;
+}
+
+/* Card styles */
+.card {
+    max-width: 540px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.card-text b {
+    font-weight: bold;
+}
+
+.btn {
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-warning {
+    background-color: #ffc107;
+    color: #ffffff;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    color: #ffffff;
+    margin-left: 10px;
+}
+
+.btn:hover {
+    background-color: #343a40;
+    color: #ffffff;
+}
+
+/* Link styles */
+a {
+    text-decoration: none;
+    color: #007bff;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #0056b3;
+}
+
+
+/* akhir detail */

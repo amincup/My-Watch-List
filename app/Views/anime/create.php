@@ -5,6 +5,7 @@
     <div class="row">
         <div class="col-8">
             <h2 class="my-3">Add your watchlist</h2>
+
             <form action="/anime/save" method="post" enctype="multipart/form-data">
                 <?= csrf_field(); ?>
                 <div class="form-group row">
