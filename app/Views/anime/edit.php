@@ -15,7 +15,7 @@
                 <input type="hidden" name="slug" value="<?= $anime['slug']; ?>">
                 <input type="hidden" name="sampulLama" value="<?= $anime['sampul']; ?>">
                 <div class="form-group row">
-                    <label for="judul" class="col-sm-2 col-form-label">Judul</label>
+                    <label for="judul" class="col-sm-2 col-form-label">Title</label>
                     <div class="col-sm-10">
                         <input type="text" class="form-control <?= ($validation->hasError('judul')) ? 'is-invalid' : '' ?>" id="judul" name="judul" autofocus value="<?= (old('judul'))
                                                                                                                                                                             ? old('judul') : $anime['judul']; ?>">
@@ -25,7 +25,7 @@
                     </div>
                 </div>
                 <div class="form-group row">
-                    <label for="genre" class="col-sm-2 col-form-label">Genre</label>
+                    <label for="genre" class="col-sm-2 col-form-label">Genres</label>
                     <div class="col-sm-10">
                         <input type="text" class="form-control" id="genre" name="genre" value=<?= (old('genre')) ?
                                                                                                     old('genre') : $anime['genre']; ?>>
@@ -39,7 +39,7 @@
                     </div>
                 </div>
                 <div class="form-group row">
-                    <label for="sampul" class="col-sm-2 col-form-label">Sampul</label>
+                    <label for="sampul" class="col-sm-2 col-form-label">Cover</label>
                     <div class="col-sm-2">
                         <img src="/img/<?= $anime['sampul']; ?>.jpg" class="img-thumbnail img-preview">
                     </div>
@@ -55,7 +55,8 @@
                 </div>
                 <div class=" form-group row">
                     <div class="col-sm-10">
-                        <button type="submit" class="btn btn-primary">Edit</button>
+                        <button type="submit" class="btn btn-dark">Edit</button>
+                        <a onClick="history.go(-1)" class="btn btn-outline-dark">Back</a>
                     </div>
                 </div>
             </form>

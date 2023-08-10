@@ -15,7 +15,7 @@ class Anime extends BaseController
     public function index()
     {
         $data = [
-            'title' => 'Okaerinasai >///<'
+            'title' => 'My Watch List | Home'
         ];
 
         return view('pages/home', $data);
@@ -31,7 +31,7 @@ class Anime extends BaseController
     public function list_anime()
     {
         $data = [
-            'title' => 'Anime',
+            'title' => 'My Watch List | Watch List',
             'anime' => $this->animeModel->getAnime()
         ];
 
@@ -41,7 +41,7 @@ class Anime extends BaseController
     public function about()
     {
         $data = [
-            'title' => 'About'
+            'title' => 'My Watch List | About'
         ];
 
         return view('pages/about', $data);
@@ -50,7 +50,7 @@ class Anime extends BaseController
     public function detail($slug)
     {
         $data = [
-            'title' => 'Ishoni mite yo >///<',
+            'title' => 'Detail',
             'anime' => $this->animeModel->getAnime($slug)
         ];
 
@@ -125,7 +125,7 @@ class Anime extends BaseController
         ]);
 
         session()->setFlashdata('pesan', 'Data successfully added');
-        return redirect()->to('/anime/list_anime');
+        return redirect()->to('/anime/list_anime/#table');
     }
 
     public function delete($id)
@@ -142,7 +142,7 @@ class Anime extends BaseController
 
         $this->animeModel->delete($id);
         session()->setFlashdata('pesan', 'Data successfully deleted');
-        return redirect()->to('/anime/list_anime');
+        return redirect()->to('/anime/list_anime/#table');
     }
 
     public function edit($slug)
@@ -213,6 +213,6 @@ class Anime extends BaseController
 
         session()->setFlashdata('pesan', 'Data successfully edited');
 
-        return redirect()->to('/anime/list_anime');
+        return redirect()->to('/anime/list_anime/#table');
     }
 }

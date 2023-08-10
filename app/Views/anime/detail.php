@@ -18,10 +18,10 @@
             <form action="/anime/<?= $anime['id']; ?>" method="post" class="d-inline">
                 <?= csrf_field(); ?>
                 <input type="hidden" name="_method" value="DELETE">
-                <button type="submit" class="btn btn-danger" onclick="return confirm('Apakah anda yakin?')">Delete</button>
+                <button type="submit" class="btn btn-danger" onclick="return confirm('Are you sure?')">Delete</button>
             </form>
+            <a href="/anime/list_anime/#table" class="btn btn-outline-dark">Back</a>
             <br><br>
-            <a href="/anime/list_anime">Back to list</a>
 
         </div>
     </div>

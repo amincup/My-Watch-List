@@ -50,7 +50,8 @@
                 </div>
                 <div class=" form-group row">
                     <div class="col-sm-10">
-                        <button type="submit" class="btn btn-primary">Add</button>
+                        <button type="submit" class="btn btn-dark">Add</button>
+                        <a onClick="history.go(-1)" class="btn btn-outline-dark">Back</a>
                     </div>
                 </div>
             </form>

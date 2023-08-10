@@ -23,7 +23,7 @@
 <div class="container">
     <div class="row">
         <div class="col">
-            <h2>Keep your track here!</h2>
+            <h2 id="table">Keep your track here!</h2>
             <?php if (session()->getFlashdata('pesan')) : ?>
                 <div class="alert alert-success" role="alert">
                     <?= session()->getFlashdata('pesan'); ?>
