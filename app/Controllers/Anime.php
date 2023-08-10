@@ -79,19 +79,20 @@ class Anime extends BaseController
                 'errors' => [
                     'required' => '{field} Judul harus di isi',
                     'is_unique' => '{field} Judul sudah terdaftar'
-                ]
+                ],
+
             ],
             'sampul' => [
-                'rules' => 'max_size[sampul,1024]|is_image[sampul]|mime_in[sampul,image/jpg,image/jpeg,image/png]',
+                'rules' => 'max_size[sampul,10240]|is_image[sampul]|mime_in[sampul,image/jpg,image/jpeg,image/png]',
                 'errors' => [
-                    'max_size' => 'File size max is 5 MB',
+                    'max_size' => 'File size max is 10 MB',
                     'is_image' => 'File you choose is not image',
                     'mime_in' => 'File you choose is not image'
                 ]
             ]
         ])) {
-            // $validation = \Config\Services::validation();
-            //return redirect()->to('/anime/create')->withInput()->with('validation', $validation);
+
+            session()->setFlashdata('pesan', 'Judul is empty or already exist');
             return redirect()->to('/anime/create')->withInput();
         }
 
@@ -124,7 +125,6 @@ class Anime extends BaseController
         ]);
 
         session()->setFlashdata('pesan', 'Data successfully added');
-
         return redirect()->to('/anime/list_anime');
     }
 
@@ -147,10 +147,12 @@ class Anime extends BaseController
 
     public function edit($slug)
     {
+        $anime = $this->animeModel->getAnime($slug);
+
         $data = [
             'title' => 'Edit watch list',
             'validation' => \Config\Services::validation(),
-            'anime' => $this->animeModel->getAnime($slug)
+            'anime' => $anime
         ];
 
         return view('anime/edit', $data);
@@ -176,14 +178,15 @@ class Anime extends BaseController
                 ]
             ],
             'sampul' => [
-                'rules' => 'max_size[sampul,1024]|is_image[sampul]|mime_in[sampul,image/jpg,image/jpeg,image/png]',
+                'rules' => 'max_size[sampul,10240]|is_image[sampul]|mime_in[sampul,image/jpg,image/jpeg,image/png]',
                 'errors' => [
-                    'max_size' => 'File size max is 5 MB',
+                    'max_size' => 'File size max is 10 MB',
                     'is_image' => 'File you choose is not image',
                     'mime_in' => 'File you choose is not image'
                 ]
             ]
         ])) {
+            session()->setFlashdata('pesan', 'Judul is empty or already exist');
             return redirect()->to('/anime/edit/' . $this->request->getVar('slug'))->withInput();
         }
 

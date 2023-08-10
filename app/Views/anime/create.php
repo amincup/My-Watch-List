@@ -5,14 +5,17 @@
     <div class="row">
         <div class="col-8">
             <h2 class="my-3">Add your watchlist</h2>
+            <?php if (session()->getFlashdata('pesan')) : ?>
+                <div class="alert alert-danger" role="alert">
+                    <?= session()->getFlashdata('pesan'); ?>
+                </div>
+            <?php endif; ?>
             <form action="/anime/save" method="post" enctype="multipart/form-data">
                 <?= csrf_field(); ?>
                 <div class="form-group row">
                     <label for="judul" class="col-sm-2 col-form-label">Judul</label>
                     <div class="col-sm-10">
-                        <input type="text" class="form-control 
-                        <?= ($validation->hasError('judul')) ?
-                            'is-invalid' : ''; ?>" id="judul" name="judul" autofocus value="<?= old('judul'); ?>">
+                        <input type="text" class="form-control <?= ($validation->hasError('judul')) ? 'is-invalid' : ' ' ?>" id="judul" name="judul" autofocus value="<?= old('judul'); ?>">
                         <div class="invalid-feedback">
                             <?= $validation->getError('judul'); ?>
                         </div>
@@ -37,8 +40,7 @@
                     </div>
                     <div class="col-sm-8">
                         <div class="custom-file">
-                            <input type="file" class="custom-file-input <?= ($validation->hasError('sampul')) ?
-                                                                            'is-invalid' : ''; ?>" id="sampul" name="sampul" onchange="previewImg()">
+                            <input type="file" class="custom-file-input <?= ($validation->hasError('sampul')) ? 'is-invalid' : ' ' ?>" id="sampul" name="sampul" onchange="previewImg()">
                             <div class="invalid-feedback">
                                 <?= $validation->getError('sampul'); ?>
                             </div>

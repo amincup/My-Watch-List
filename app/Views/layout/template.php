@@ -35,8 +35,8 @@
     <script>
         function previewImg() {
             const sampul = document.querySelector('#sampul');
-            const sampulLabel = document.querySelector('custom-file-label');
-            const imgPreview = document.querySelector('img-preview');
+            const sampulLabel = document.querySelector('.custom-file-label');
+            const imgPreview = document.querySelector('.img-preview');
 
             sampulLabel.textContent = sampul.files[0].name;
 
