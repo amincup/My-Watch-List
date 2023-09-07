@@ -13,7 +13,7 @@
             <form action="/anime/save" method="post" enctype="multipart/form-data">
                 <?= csrf_field(); ?>
                 <div class="form-group row">
-                    <label for="judul" class="col-sm-2 col-form-label">Judul</label>
+                    <label for="judul" class="col-sm-2 col-form-label">Title</label>
                     <div class="col-sm-10">
                         <input type="text" class="form-control <?= ($validation->hasError('judul')) ? 'is-invalid' : ' ' ?>" id="judul" name="judul" autofocus value="<?= old('judul'); ?>">
                         <div class="invalid-feedback">
@@ -34,7 +34,7 @@
                     </div>
                 </div>
                 <div class="form-group row">
-                    <label for="sampul" class="col-sm-2 col-form-label">Sampul</label>
+                    <label for="sampul" class="col-sm-2 col-form-label">Cover</label>
                     <div class="col-sm-2">
                         <img src="/img/default.jpg" class="img-thumbnail img-preview">
                     </div>
